@@ -23,7 +23,6 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-
 }
 
 ul {
@@ -96,7 +95,7 @@ margin-right: 93px;
 
 }
 .nav-link { 
-    color: var(--acsent-color);
+    color:var(--text-color);
     font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -104,7 +103,7 @@ letter-spacing: 0.02em;
 
 }
 .nav-link:hover, .nav-link:focus {
-    color: #000000;
+    color: var(--acsent-color);
 }
 .nav-link .current { 
     color: #000000;
@@ -128,7 +127,7 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 }
 .nav-link-tel:hover,  .nav-link-tel:focus {
-    color: #000000;
+    color: var(--acsent-color);
 }
 .logo-white { 
     font-family: 'Raleway';
@@ -238,8 +237,8 @@ margin-bottom: 30px;
   }
 
 .contack {
-        font-family: 'Roboto';
-    font-size: 14px;
+font-family: 'Roboto';
+ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
@@ -287,7 +286,7 @@ cursor: pointer;
 border-radius: 4px;
 min-width: 125px;
 padding: 6px 22px;
-border: 2px solid #F5F4FA;;
+border: 2px solid transparent;
 }
 
 .button-all {
@@ -360,8 +359,7 @@ color:var(--text-color);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 24px;
-    padding-left: 24px;
-    border: 2px solid tomato;   
+    padding-left: 24px; 
 }
     
 .address-contacts {
@@ -395,27 +393,36 @@ color:var(--text-color);
     align-items: center;
     margin-top: 16px;
     justify-content:center;
-    gap: 10px; 
+    gap: 10px;
+}
 
+.prioritet-spesoc-one {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    justify-content:center;
+    gap: 10px;
 }
 .prioritet-link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: aquamarine;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #FFFFFF;
-}
+    color: var(--text-color);
+   }
+
 .komanda-sm {
-    color: #AFB1B8;
+  fill: currentColor;
 }
-    .prioritet-link:hover,
-    .prioritet-link:focus {
-    background-color:  #2F303A;
-    fill: #000000;
+.prioritet-link:hover, 
+.prioritet-link:focus {
+background-color: var(--acsent-color);
+color: #FFFFFF;
 }
+
 
 .client {
     padding-top: 94px;
@@ -445,13 +452,21 @@ color: #FFFFFF;
     display: flex;
     width: 170px;
     height: 92px;
-    margin-top: 50px;
     border: 1px solid #AFB1B8;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-        
+    color: var(--text-color);       
 }
+.company {
+    fill: currentColor;
+}
+.box-one:hover, .company:hover,
+.box-one:focus, .company:hover {
+    border: 1px solid var(--acsent-color);
+    color: var(--acsent-color);
+}
+
 .client-spesoc {
     display: flex;
     gap: 30px;
@@ -464,13 +479,14 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
-margin-bottom: 0px;
+margin-bottom: 50px;
 }
 
 .border {
 background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+0px 1px 1px rgba(0, 0, 0, 0.14), 
+0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
 .border-one {
@@ -478,20 +494,33 @@ border-radius: 0px 0px 4px 4px;
     font-style: normal;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.button:hover,.button:focus, 
+.border-one:hover, .border-one:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+0px 4px 4px rgba(0, 0, 0, 0.06), 
+1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.footer-socmeregi {
+    display: flex;
+}
+
 .button-all:hover, .button-all:focus {
     background: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
      0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.button:hover,.button:focus {
+    background: var(--fon-komanda-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+     0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .one, .blok-socmeregi {
-    display: inline-block;
-    align-items: baseline;
+        align-items: baseline;
 }
 .blok-socmeregi {
         padding-bottom: 100px;               
