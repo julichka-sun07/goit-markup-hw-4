@@ -100,9 +100,17 @@ margin-right: 93px;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+display: flex;
+align-items:center;
+}
+.komanda-sm-one{
+    padding-right: 10px;
+    color: var(--text-color);
 
 }
-.nav-link:hover, .nav-link:focus {
+
+.nav-link:hover, .nav-link:focus, .komanda-sm-one:hover, 
+.komanda-sm-one:focus {
     color: var(--acsent-color);
 }
 .nav-link .current { 
@@ -117,7 +125,8 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 }
 
-.nav-link-head:hover,.nav-link-head:focus {color:#2196F3;}
+.nav-link-head:hover,.nav-link-head:focus
+ {color:#2196F3;}
 
 .nav-link-tel {
     color: var(--text-color);
@@ -125,10 +134,13 @@ letter-spacing: 0.02em;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+display: flex;
+align-items:center;
 }
 .nav-link-tel:hover,  .nav-link-tel:focus {
     color: var(--acsent-color);
 }
+
 .logo-white { 
     font-family: 'Raleway';
 font-weight: 700;
@@ -411,7 +423,7 @@ color:var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-color);
+    color: #AFB1B8;
    }
 
 .komanda-sm {
@@ -422,7 +434,6 @@ color:var(--text-color);
 background-color: var(--acsent-color);
 color: #FFFFFF;
 }
-
 
 .client {
     padding-top: 94px;
@@ -504,7 +515,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 
 .footer-socmeregi {
     display: flex;
-}
+    gap: 70px;
+  }
 
 .button-all:hover, .button-all:focus {
     background: #2196F3;
@@ -513,7 +525,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
       0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button:hover,.button:focus {
-    background: var(--fon-komanda-color);
+    background: var(--acsent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
      0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -522,9 +534,38 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 .one, .blok-socmeregi {
         align-items: baseline;
 }
-.blok-socmeregi {
-        padding-bottom: 100px;               
-}  
+             
 .socmeregi {
     margin-bottom: 20px;
+}
+
+.button {
+    fill: currentColor;
+  }
+  .button:hover, 
+  .button:focus {
+  background-color: var(--acsent-color);
+  color: #FFFFFF;
+  }
+
+
+  .prioritet-link-one {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);;
+    border: 2px solid var(--title-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+   }
+
+.komanda-sm {
+  fill: currentColor;
+}
+.prioritet-link-one:hover, 
+.prioritet-link-one:focus {
+background-color: var(--acsent-color);
+color: #FFFFFF;
 }
